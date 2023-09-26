@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chop-i-Chop Int</title>
+
+    <!--Tailwindcss-->
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Font awesome link-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@600&family=Josefin+Sans&family=Kanit&family=Lato&family=Mukta&family=Poppins:wght@300;400;500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat:wght@600;700&family=Dancing+Script:wght@600&family=Josefin+Sans&family=Kanit&family=Lato&family=Mukta&family=Poppins:wght@300;400;500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM&display=swap"
+      rel="stylesheet"
+    />
+
+   
+
+    <link rel="shortcut icon" href="../images/logo/WhatsApp_Image_2023-08-07_at_14.59.08-removebg-preview.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+<link rel="stylesheet" href="./css/cart.css">
+
+  </head>
+  
+  
+<body>
+
+
+
+<header>
+
+    <div class="nav container" style="background-color: rgba(245, 245, 245, 0.521);">
+      <a href="#" class="logo" ><img src="./images/logo/WhatsApp_Image_2023-08-07_at_14.59.08-removebg-preview.png" alt="" style="width: 80px; margin-top: -20px; background-color: rgba(245, 245, 245, 0.521);" ></a>
+      <li class="link_back" style="background-color: whitesmoke;"><a href="index.html">Home /</a>Cart</li>
+       <div class="cart-icon relative">
+        <i class="fa-solid fa-bag-shopping logo-2 id" id="cart-icon"></i>
+        <span class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-white-500 p-3 rounded-full w-4 h-4 text-green-500 flex items-center justify-center" id="cart-count">0</span>
+    </div>
+      
+
+      <div class="cart">
+        <h2 class="cart-title">
+          Your Cart
+        </h2>
+        <div class="cart-content">
+
+
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy" id="Checkout-btn">Buy Now</button>
+
+        <i class="fa-solid fa-times" id="close-cart"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="shop container">
+    
+
+    <div class="shop-content">
+      <div class="product-box">
+        <img src="./images/store/box-3.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Abacha and fried fish</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/box-2.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Rice fried plantain<br> and vegetable stew </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+
+      <div class="product-box">
+        <img src="./images/store/box-1.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Egusi Soup </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/box-4.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Rice chicken stew </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/menu-21.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Okro Soup</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/WhatsApp Image 2023-08-19 at 10.25.48 PM.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Porridge Yam & <br>fried fish </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/amala-f-v-s.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Amala, Fried fish <br>& Vegetable Stew</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-4.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Noodles, Snail & Wele</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/menu-11.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Assorted peppersoup, <br> rice & fried plantain </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/menu-2.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> rice & catfish stew </h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+
+      <div class="product-box">
+        <img src="./images/store/beans-yam.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Beans and Yam</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/snail-a.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Assorted Snail</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/special-1.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Special - 2</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-5.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Chips & cat fish sauce</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="../images/store/WhatsApp Image 2023-08-19 at 10.28.01 PM.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Pepper Snail</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-20.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Special</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-7.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Okro Soup "Assorted</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-19.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Plantain & Egg Sauce</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-16.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Grilled Chicken</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-15.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Akamu & Moi Moi</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/rice-special.jpeg" alt="" class="product-img">
+        <h2 class="product-title">Rice Special</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-9.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> noodles egg &<br> fresh fish</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/menu-6.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Amala & Okro<br> Cat fish Stew</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+      <div class="product-box">
+        <img src="./images/store/noodles-crayfish.jpeg" alt="" class="product-img">
+        <h2 class="product-title"> Noodles, Chicken<br> & Crayfish</h2>
+        <span class="price">100</span>
+        <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+      </div>
+    </div>
+  </section>
+
+ <div class="main-animation">
+ <div class="div-1  text-center">
+  <h2  data-aos="fade-up" data-aos-duration="2000" class=" text-5xl bg-green-600 p-4 text-white trigger font-bold w-full">Didnt Get What You Had In Mind?
+    <br>
+    <Span  class="text-2xl silent bg-green-600 text-white font-normal ">Simply Head To the Contact Page to Make Enquiries and  Orders That suits you</Span>
+  </h2>
+  
+
+ </div>
+ </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+  <script src="./js/cart.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/checkout.js"></script>
+</body>
+</html>

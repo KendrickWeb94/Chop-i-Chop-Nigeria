@@ -1,0 +1,22 @@
+$background-color: forestgreen;
+$text-color: white;
+$dark-text: #222;
+
+
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+    $regular: 400;
+    $bold: 600;
+    $bolder: 900;
+
+$large-font: 2rem;
+$medium: 1.5rem;
+$small: 1rem;
+$tiny: 0.5rem;
+
+
+
