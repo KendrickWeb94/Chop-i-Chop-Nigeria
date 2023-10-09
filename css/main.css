@@ -282,13 +282,27 @@ body {
 .ise img {
     width: 100px;
 }
+.forum-time{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.open-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .menu_hanger {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: 300px;
     width: 100%;
-
+    align-items: center;
+    justify-content: center;
+    place-content: center !important;
+    gap: 1rem;
 }
 
 .section-p {
@@ -1037,7 +1051,6 @@ form .form-row .textarea {
     justify-content: space-between;
     align-items: center;
     border-radius: 25px;
-    border: 1px solid forestgreen;
     padding: 40px 90px 45px 60px;
 }
 
@@ -1191,6 +1204,41 @@ form .form-row .textarea {
 }
 
 
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.Success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease  forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: #ffffffff;
+    animation: status 4s ease  forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 
 
 .menu-header {
@@ -1302,7 +1350,12 @@ form .form-row .textarea {
 
 }
 
+.menu_hanger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 .menu_card {
     background-position: center !important;
     background-size: cover !important;
@@ -1453,18 +1506,21 @@ form .form-row .textarea {
 }
 
 .open-time {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: 40px;
+   display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .open-time .forum-time {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 2rem;
-    margin: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     align-items: center;
 }
 
