@@ -148,7 +148,7 @@ section {
     position: fixed;
     top: 0;
     overflow: auto;
-    right: -100%;
+    right: -1000%;
     width: 360px;
     height: 100vh;
     padding: 20px;
@@ -268,4 +268,120 @@ section {
 }
 .silent{
     font-family: 'REM';
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    /* Adjust font sizes and spacing for smaller screens */
+    
+    /* Reduce font size for section titles */
+    .section-title {
+        font-size: 1rem;
+    }
+
+    /* Increase the size of product images */
+    .product-img {
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+    }
+
+    /* Adjust padding and margin for product boxes */
+    .product-box {
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    /* Reduce font size for product titles */
+    .product-title {
+        font-size: 0.9rem;
+    }
+    
+    /* Reduce font size for prices */
+    .price {
+        font-size: 0.9rem;
+    }
+    
+    /* Increase font size for the cart button */
+    .add-to-cart {
+        font-size: 0.8rem;
+    }
+
+    /* Additional responsive styles for screens up to 768px */
+    /* Add more responsive styles here as needed */
+}
+
+/* Responsive styles for screens up to 480px */
+@media (max-width: 480px) {
+    /* Place additional responsive styles for smaller screens here */
+  .nav{
+    height: auto;
+    display: block;
+
+  }
+  
+  .logo-2 {
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 2rem;
+      position: relative;
+      color: forestgreen;
+  }
+    /* Further reduce font sizes and spacing for very small screens */
+    .link_back{
+        font-size: 1rem;
+    }
+    /* Reduce font size for section titles */
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce font size for product titles */
+    .product-title {
+        font-size: 0.8rem;
+    }
+
+    /* Reduce font size for prices */
+    .price {
+        font-size: 0.8rem;
+    }
+
+    /* Decrease padding and margin for product boxes */
+    .product-box {
+        padding: 3px;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Decrease font size for the cart button */
+    .add-to-cart {
+        font-size: 0.7rem;
+    }
+
+    /* Reduce font size for the cart title */
+    .cart-title {
+        font-size: 1.2rem;
+    }
+
+    /* Decrease font size for the cart product titles */
+    .cart-product-title {
+        font-size: 0.8rem;
+    }
+
+    /* Reduce font size for the cart price */
+    .cart-price {
+        font-size: 0.8rem;
+    }
+
+    /* Reduce font size for the cart quantity input */
+    .cart-quantity {
+        font-size: 0.7rem;
+    }
+
+    /* Decrease font size for the "Buy" button */
+    .btn-buy {
+        font-size: 0.8rem;
+    }
+
+    /* Additional responsive styles for screens up to 480px */
+    /* Add more responsive styles here as needed */
 }
